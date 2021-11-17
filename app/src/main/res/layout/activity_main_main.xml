@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowGH"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/little"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/nickname"
+        app:layout_constraintEnd_toStartOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings"
+        android:contentDescription="@string/ForImage"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/ForImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/ranchers"
+            android:gravity="bottom"
+            android:text="@string/app_name"
+            android:textSize="64sp"
+            style="@style/titles"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp">
+
+            <Button
+                style="@style/medium"
+                android:id="@+id/ancient_his"
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_bg"
+                android:text="@string/ancient_history"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp">
+
+            <Button
+                style="@style/medium"
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_bg1"
+                android:text="@string/medieval_history"
+                android:gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp">
+
+            <Button
+                style="@style/medium"
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_bg"
+                android:text="@string/modern_history"
+                android:gravity="center"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp">
+
+            <Button
+                style="@style/medium"
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_bg1"
+                android:text="@string/general_geography"
+                android:gravity="center"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/toolbarGH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/menu"
+                android:contentDescription="@string/ForImage"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="156dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/profile"
+                android:contentDescription="@string/ForImage"/>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="123dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/rating"
+                android:contentDescription="@string/ForImage"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3"
+            app:layout_constraintBottom_toBottomOf="@id/constraint">
+
+            <TextView
+                style="@style/toolbar"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/menu" />
+
+            <TextView
+                style="@style/toolbar"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/profile" />
+
+            <TextView
+                style="@style/toolbar"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/rating" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

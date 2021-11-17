@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kg.tsi.geohis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Geohis">
+        <activity
+            android:name=".MainActivityLoading"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityNav"
+            android:exported="false"
+            android:label="@string/title_activity_main_nav" />
+        <activity
+            android:name=".MainActivitynav"
+            android:exported="false"
+            android:label="@string/title_activity_main_activitynav"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".nav"
+            android:exported="false"
+            android:label="@string/title_activity_nav" />
+        <activity
+            android:name=".MainActivityGeo_memory"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityRating"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityLoseGame"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityGeoMap"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySettings"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityGeoBelgium"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityGenGeography"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityAncient"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityMain"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityloading"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
