@@ -18,6 +18,7 @@ class MainActivityMain : AppCompatActivity() {
         click.setOnClickListener{
             startActivity(Intent(this,MainActivityAncient::class.java))
 
+
             val click = findViewById<CardView>(R.id.medival_history_button)
 
             click.setOnClickListener{
