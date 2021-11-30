@@ -8,23 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Geohis">
+        android:theme="@style/Theme.Design.NoActionBar">
         <activity
             android:name=".MainActivityLoading"
             android:exported="false" />
-        <activity
-            android:name=".MainActivityNav"
-            android:exported="false"
-            android:label="@string/title_activity_main_nav" />
-        <activity
-            android:name=".MainActivitynav"
-            android:exported="false"
-            android:label="@string/title_activity_main_activitynav"
-            android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".nav"
-            android:exported="false"
-            android:label="@string/title_activity_nav" />
         <activity
             android:name=".MainActivityGeo_memory"
             android:exported="false" />
@@ -54,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".MainActivityMain"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivityloading"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
