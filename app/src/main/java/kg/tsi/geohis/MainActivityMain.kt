@@ -12,23 +12,11 @@ class MainActivityMain : AppCompatActivity() {
         setContentView(R.layout.activity_main_main)
 
         //body
-        val click = findViewById<CardView>(R.id.ancient_his_button)
+        val click = findViewById<Button>(R.id.ancient_his)
 
 
         click.setOnClickListener{
             startActivity(Intent(this,MainActivityAncient::class.java))
-
-
-            val click = findViewById<CardView>(R.id.medival_history_button)
-
-            click.setOnClickListener{
-                startActivity(Intent(this,MainActivityAncient::class.java))
-
-
-
-                }
-
-
 
        }
     }
