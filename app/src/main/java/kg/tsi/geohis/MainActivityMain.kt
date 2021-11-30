@@ -18,6 +18,7 @@ class MainActivityMain : AppCompatActivity() {
         click.setOnClickListener{
             startActivity(Intent(this,MainActivityAncient::class.java))
 
+
        }
     }
 }
